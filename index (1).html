@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Heesoo Lim</title>
+<meta name="description" content="Heesoo Lim is an M.A. student in social psychology at Yonsei University. She studies what enables romantic relationships to flourish and be maintained over time, asking with whom, when, and under what conditions individual characteristics matter, using dyadic longitudinal designs.">
+<meta property="og:title" content="Heesoo Lim">
+<meta property="og:type" content="profile">
+<meta property="og:description" content="M.A. student in social psychology at Yonsei University. Romantic relationships, mate value, sexuality, adult attachment, dyadic data analysis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F7F5F9; --surface:#FFFFFF; --text:#1F1826; --muted:#5F5668; --faint:#8A8192; --line:#E2DCE8;
+  --accent:#5B2A5E; --accent-soft:#F0E9F2; --pill:#EAE4EE; --hers:#B23A63; --his:#2B6878;
+  --serif:"Newsreader","Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Apple SD Gothic Neo","Malgun Gothic",serif;
+  --sans:"Bricolage Grotesque",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --page-w:1060px; --label-w:256px; --gap:52px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#17131B;--surface:#201A26;--text:#ECE6F1;--muted:#ABA2B4;--faint:#7F768A;--line:#322A3B;--accent:#D2A6DA;--accent-soft:#2A2030;--pill:#2C2434;--hers:#EE8FAE;--his:#79BFD0}
+}
+:root[data-theme="dark"]{--bg:#17131B;--surface:#201A26;--text:#ECE6F1;--muted:#ABA2B4;--faint:#7F768A;--line:#322A3B;--accent:#D2A6DA;--accent-soft:#2A2030;--pill:#2C2434;--hers:#EE8FAE;--his:#79BFD0}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--serif);font-size:17.5px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+.skip{position:absolute;left:-9999px;top:8px;background:var(--accent);color:var(--bg);padding:8px 12px;border-radius:6px;font-family:var(--sans);font-size:14px}
+.skip:focus{left:8px;z-index:100}
+
+.topbar{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:saturate(1.2) blur(8px);-webkit-backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid var(--line)}
+.topbar-inner{max-width:var(--page-w);margin:0 auto;padding:14px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{font-family:var(--sans);font-size:15px;font-weight:600;color:var(--text);white-space:nowrap}
+.brand:hover{text-decoration:none;color:var(--accent)}
+.nav{display:flex;gap:22px;overflow-x:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav a{font-family:var(--sans);font-size:14px;color:var(--muted);white-space:nowrap;padding:4px 0;border-bottom:1.5px solid transparent}
+.nav a:hover{color:var(--text);text-decoration:none}
+.nav a.active{color:var(--accent);border-bottom-color:var(--accent)}
+
+.page{max-width:var(--page-w);margin:0 auto;padding:72px 32px 96px}
+
+.hero{display:grid;grid-template-columns:var(--label-w) minmax(0,1fr);column-gap:var(--gap);padding-bottom:64px;margin-bottom:8px;border-bottom:1px solid var(--line)}
+.hero-side{align-self:start;position:sticky;top:88px}
+.monogram{width:64px;height:64px;border-radius:50%;background:var(--accent);color:var(--bg);font-family:var(--sans);font-size:23px;font-weight:600;display:grid;place-items:center;margin-bottom:20px;letter-spacing:.02em}
+.name{font-family:var(--sans);font-size:31px;font-weight:600;line-height:1.1;margin:0 0 10px;letter-spacing:-.025em}
+.role{font-family:var(--sans);font-size:14.5px;font-weight:500;margin:0 0 4px}
+.affil{font-family:var(--sans);font-size:14px;line-height:1.5;color:var(--muted);margin:0 0 22px}
+.links{display:flex;flex-direction:column;gap:8px;align-items:stretch}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:9px 13px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--text);font-family:var(--sans);font-size:13.5px;line-height:1.2;min-width:0}
+.btn:hover{border-color:var(--accent);text-decoration:none}
+.btn svg{width:16px;height:16px;flex:none}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--bg);font-weight:500}
+.btn.primary:hover{filter:brightness(1.1)}
+.mailrow{display:flex;gap:6px;align-items:stretch}
+.mailrow .btn{flex:1;white-space:nowrap;font-size:13px;gap:8px;padding:9px 10px 9px 12px}
+.mailrow.inline{display:inline-flex;align-items:center;gap:10px}
+.copy{font-family:var(--sans);font-size:12px;font-weight:500;padding:0 10px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--muted);cursor:pointer}
+.mailrow.inline .copy{padding:4px 10px;border-radius:999px}
+.copy:hover,.copy.done{border-color:var(--accent);color:var(--accent)}
+
+.about-title{font-family:var(--sans);font-size:26px;font-weight:600;margin:0 0 18px;padding-bottom:8px;border-bottom:1px solid var(--line);letter-spacing:-.02em}
+.lead{font-size:19.5px;line-height:1.55;margin:0 0 16px}
+.hero-main p{margin:0 0 16px}
+.hero-main strong{font-weight:600}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.tags span{font-family:var(--sans);background:var(--accent-soft);color:var(--accent);font-size:13px;font-weight:500;padding:4px 11px;border-radius:999px}
+
+.block{display:grid;grid-template-columns:var(--label-w) minmax(0,1fr);column-gap:var(--gap);padding:40px 0;border-bottom:1px solid var(--line)}
+.view .block:last-child{border-bottom:0}
+.label{position:sticky;top:72px;align-self:start;margin:3px 0 0;font-family:var(--sans);font-size:15px;font-weight:600;color:var(--accent);letter-spacing:-.005em}
+.body{min-width:0}
+h3{font-family:var(--sans);font-size:13.5px;font-weight:500;color:var(--faint);margin:28px 0 12px}
+h3:first-child{margin-top:0}
+
+.entries{list-style:none;margin:0;padding:0}
+.entries>li{padding:14px 0;border-bottom:1px dashed var(--line)}
+.entries>li:first-child{padding-top:0}
+.entries>li:last-child{border-bottom:0;padding-bottom:0}
+.entries.compact>li{padding:10px 0}
+.entries.compact>li:first-child{padding-top:0}
+.entry-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+.entry-head strong{font-weight:600}
+.date{flex:none;font-family:var(--sans);color:var(--faint);font-size:13px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.entry-sub{color:var(--muted);font-size:16px;margin-top:2px}
+.entry-meta{font-family:var(--sans);color:var(--faint);font-size:13.5px;margin-top:4px}
+.bullets{margin:8px 0 0;padding-left:18px;font-size:16.5px}
+.bullets li{margin:3px 0}
+.bullets li::marker{color:var(--faint)}
+
+.pubs{margin:0;padding-left:24px}
+.pubs>li{margin:0 0 14px;font-size:17px;line-height:1.55}
+.pubs>li:last-child{margin-bottom:0}
+.pubs>li::marker{font-family:var(--sans);font-size:13px;color:var(--faint)}
+.me{font-weight:600}
+.pill{display:inline-block;font-family:var(--sans);font-size:11.5px;font-weight:600;background:var(--pill);color:var(--muted);padding:1px 8px;border-radius:4px;margin-right:4px;vertical-align:1px}
+.note{font-family:var(--sans);color:var(--faint);font-size:13px;margin:14px 0 0}
+
+.abstract{margin-top:6px}
+.abstract summary{display:inline-block;cursor:pointer;font-family:var(--sans);color:var(--accent);font-size:13.5px;font-weight:500;list-style:none;user-select:none}
+.abstract summary::-webkit-details-marker{display:none}
+.abstract summary::before{content:"+";display:inline-block;width:12px;font-weight:600}
+.abstract[open] summary::before{content:"–"}
+.abstract summary:hover{text-decoration:underline;text-underline-offset:3px}
+.rs-body{margin:8px 0 4px;padding:12px 16px;border-left:2px solid var(--accent);background:var(--accent-soft);border-radius:0 6px 6px 0;font-size:16px;line-height:1.55}
+.rs-body p{margin:0 0 10px}
+.rs-body p strong{font-family:var(--sans);font-size:13.5px;font-weight:600;color:var(--accent)}
+.figs{display:grid;grid-template-columns:1fr;gap:14px;margin:12px 0 4px}
+.figs figure{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px}
+.figs figcaption{font-family:var(--sans);font-size:12.8px;color:var(--muted);margin-top:8px;line-height:1.45}
+.chart{overflow-x:auto}
+.chart svg{display:block;width:100%;min-width:30rem;max-width:40rem;height:auto;font-family:var(--sans)}
+svg .grid{stroke:var(--line);stroke-width:1}
+svg .zero{stroke:var(--muted);stroke-width:1.25}
+svg .ref{stroke:var(--muted);stroke-width:1;stroke-dasharray:3 4}
+svg .peak{stroke:var(--accent);stroke-width:1;stroke-dasharray:2 3}
+svg .curve{fill:none;stroke:var(--accent);stroke-width:2.5;stroke-linecap:round}
+svg .dot{fill:var(--surface);stroke:var(--accent);stroke-width:2}
+svg .link{stroke:var(--line);stroke-width:2}
+svg .hers{fill:var(--hers);stroke:var(--hers);stroke-width:2}
+svg .his{fill:var(--his);stroke:var(--his);stroke-width:2}
+svg .ns{fill:var(--surface)}
+svg .nsleg{fill:var(--surface);stroke:var(--muted);stroke-width:2}
+svg text{fill:var(--text);font-size:14px}
+svg .tick,svg .axis,svg .note,svg .leg{fill:var(--muted);font-size:13px}
+svg .head{font-size:14px;font-weight:500}
+svg .lab{font-size:14.5px;font-weight:600;fill:var(--accent)}
+svg .row{font-size:15px;font-weight:500}
+svg .val{font-size:13.5px;font-weight:500}
+svg .herst{fill:var(--hers)} svg .hist{fill:var(--his)}
+
+html.js .view{display:none}
+html.js .view.active{display:block}
+
+.skills,.contact{margin:0;display:grid;grid-template-columns:170px 1fr;row-gap:10px;column-gap:20px}
+.skills dt,.contact dt{font-family:var(--sans);font-size:13.5px;font-weight:600;color:var(--muted);padding-top:3px}
+.skills dd,.contact dd{margin:0}
+.foot{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);font-family:var(--sans);color:var(--faint);font-size:12.5px}
+.foot p{margin:0}
+
+@media (max-width:860px){
+  .page{padding:40px 22px 80px}
+  .hero,.block{grid-template-columns:1fr;row-gap:18px}
+  .hero{padding-bottom:44px}
+  .hero-side{position:static}
+  .links{flex-direction:row;flex-wrap:wrap}
+  .mailrow .btn{flex:none}
+  .label{position:static;margin-bottom:4px}
+  .block{padding:32px 0}
+}
+@media (max-width:560px){
+  body{font-size:16.5px}
+  .topbar-inner{padding:12px 18px;flex-direction:column;align-items:flex-start;gap:6px}
+  .nav{gap:16px;width:100%}
+  .lead{font-size:18px}
+  .entry-head{flex-direction:column;gap:0}
+  .skills,.contact{grid-template-columns:1fr;row-gap:2px}
+  .skills dd,.contact dd{margin-bottom:10px}
+}
+@media print{
+  .topbar,.skip,.links{display:none}
+  .page{padding:0;max-width:none}
+  .hero,.block{display:block}
+  .hero-side,.label{position:static}
+  html.js .view{display:block}
+}
+
+</style>
+</head>
+<body id="top">
+<a class="skip" href="#about">Skip to content</a>
+<header class="topbar"><div class="topbar-inner">
+  <a class="brand" href="#about">Heesoo Lim</a>
+  <nav class="nav" aria-label="Sections">
+    <a href="#about">About</a><a href="#publications">Publications</a><a href="#presentations">Presentations</a><a href="#experience">Experience</a><a href="#teaching">Teaching</a><a href="#activities">Activities</a><a href="#contact">Contact</a>
+  </nav>
+</div></header>
+
+<main class="page">
+
+<div class="view" data-section="about">
+  <section id="about" class="hero">
+    <aside class="hero-side">
+      <div class="monogram" aria-hidden="true">HS</div>
+      <h1 class="name">Heesoo Lim</h1>
+      <p class="role">M.A. Student in Social Psychology</p>
+      <p class="affil">Department of Psychology<br>Yonsei University, Seoul</p>
+      <div class="links">
+        <!-- Put your CV PDF next to index.html with this file name, or change the href. -->
+        <a class="btn primary" href="Lim_HS_CV.pdf" download="Lim_HS_CV.pdf"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Download CV (PDF)</a>
+        <div class="mailrow">
+          <a class="btn" href="mailto:heesoolim@yonsei.ac.kr"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4zM4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>heesoolim@yonsei.ac.kr</a>
+          <button type="button" class="copy" data-copy="heesoolim@yonsei.ac.kr" aria-label="Copy email address">Copy</button>
+        </div>
+        <a class="btn" href="http://www.words.co.kr/xe/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V8l7-4 7 4v13M10 21v-6h4v6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Lab website</a>
+      </div>
+    </aside>
+    <div class="hero-main">
+      <h2 class="about-title">About</h2>
+      <p class="lead">I am a master’s student in the <a href="http://www.words.co.kr/xe/">Social &amp; Cultural Psychology Lab</a> at Yonsei University, advised by <a href="http://www.words.co.kr/xe/">Young-Hoon Kim</a>. My research addresses a classic yet still central question in relationship science: what enables romantic relationships to flourish and to be maintained over time? Rather than asking only which individual characteristics predict relationship satisfaction, I ask with whom, when, and under what conditions they do so.</p>
+      <p>To date, my work has centered on three questions. First, <strong>how do the two partners’ characteristics and behaviors combine in their associations with relationship satisfaction?</strong> I have examined actor and partner effects and the balance between partners, asking whether what matters is a person’s own level, the partner’s level, or how the two stand relative to each other, for characteristics and behaviors ranging from attachment anxiety and avoidance to the share of sexual initiation each spouse takes on. Second, <strong>how does the importance of those characteristics vary across time and context?</strong> Couples move through stages, and the same characteristic can matter more at one point than at another. So far I have examined the transition to marriage, asking whether the partner qualities tied to relationship and sexual satisfaction before the wedding, such as personality, appearance, and socioeconomic status, are still the ones that matter afterward, and I am interested in extending this to other contexts that surround a couple. Third, <strong>how do partners perceive each other?</strong> I have compared self-reports with partner reports of personality and examined perceptions of a partner’s mate value, asking whose view carries more weight when the two diverge and whether the answer differs for women and men. I am particularly interested in the conditions under which a partner’s favorable view benefits relationship satisfaction more than one’s own.</p>
+      <p>My work draws mainly on dyadic longitudinal studies that follow Korean couples across the transition to marriage, two cohorts and more than 1,200 couples in total, and earlier on meta-analytic data. Methodologically, I specialize in dyadic and longitudinal analysis, including the Actor–Partner Interdependence Model, dyadic response surface analysis, structural equation modeling, and multilevel modeling. Most recently, I have begun to explore how factors at different levels, from the broader environment surrounding a couple down to the relationship itself, the self, and the partner, each contribute to couples’ relationship satisfaction.</p>
+      <div class="tags" aria-label="Research interests"><span>Romantic relationships</span><span>Mate value</span><span>Sexuality</span><span>Personality</span><span>Adult attachment</span><span>Relationship transitions</span></div>
+    </div>
+  </section>
+  <section id="education" class="block"><h2 class="label">Education</h2><div class="body"><ul class="entries"><li><div class="entry-head"><strong>Yonsei University</strong><span class="date">Mar 2025 – Present</span></div><div class="entry-sub">M.A. in Psychology · Seoul, Korea</div><div class="entry-meta">Advisor: <a href="http://www.words.co.kr/xe/" target="_blank" rel="noopener">Young-Hoon Kim</a> · GPA 4.16 / 4.30</div></li><li><div class="entry-head"><strong>The Catholic University of Korea</strong><span class="date">Feb 2025</span></div><div class="entry-sub">B.A. in Psychology · Bucheon, Korea</div><div class="entry-meta">GPA 4.36 / 4.50</div></li></ul></div></section>
+  <section id="skills" class="block"><h2 class="label">Skills</h2><div class="body"><dl class="skills">
+    <dt>Statistical software</dt><dd>R, SPSS</dd>
+    <dt>Quantitative methods</dt><dd>Dyadic data analysis (APIM, DRSA), structural equation modeling, multilevel and longitudinal modeling</dd>
+  </dl></div></section>
+</div>
+
+<div class="view" data-section="publications">
+  <section id="publications" class="block"><h2 class="label">Publications</h2><div class="body">
+    <h3>Under Review</h3>
+    <ol class="pubs">
+      <li>Shin, J. E., <span class="me">Lim, H.</span>, &amp; Kim, Y. H. (under review). How I see myself or how you see me: Gender differences in the relative weight of self- and partner-perceptions for relationship well-being.<details class="abstract"><summary>Summary &amp; figures</summary><div class="rs-body"><p><strong>Question.</strong> When a person’s view of their own personality and their partner’s view of it diverge, whose view is more closely tied to relationship satisfaction, and is the answer the same for women and men? Earlier studies entered self- and partner-perceptions as parallel predictors, which cannot show what happens when the two conflict.</p><p><strong>Data and approach.</strong> 501 engaged heterosexual couples in South Korea, all planning to marry within six months, rated their own and their partner’s Big Five traits. Dyadic response surface analysis modeled relationship satisfaction across every combination of self- and partner-perception, and the slope along the line of incongruence (a₃) tested whether the direction of a discrepancy mattered.</p><p><strong>Findings.</strong> When the two views agreed, satisfaction followed how favorable they were, for both genders. When they diverged, the genders split. Women were more satisfied when their partner saw them more favorably than they saw themselves, for conscientiousness, openness, and extraversion. Men were more satisfied when their self-view was the more favorable one, for conscientiousness, openness, and neuroticism. Agreeableness was the exception: discrepancies in a woman’s agreeableness were related to her partner’s satisfaction rather than her own. Discrepancies are therefore not harmful in themselves; their direction is what matters.</p><div class="figs"><figure><div class="chart"><svg viewBox="0 0 640 390" role="img" aria-labelledby="c2t c2d"><title id="c2t">Direction of the self–partner discrepancy linked to higher relationship satisfaction, by trait and gender</title><desc id="c2d">Women’s estimates fall on the side where the partner’s view is more favorable (conscientiousness −.17, openness −.09, extraversion −.12). Men’s fall on the side where the self-view is more favorable (conscientiousness .16, openness .14, emotional stability .21).</desc><text x="376.0" y="30.0" text-anchor="end" class="head" >Happier when my partner</text><text x="376.0" y="48.0" text-anchor="end" class="head" >sees me more favorably</text><text x="404.0" y="30.0" text-anchor="start" class="head" >Happier when I see</text><text x="404.0" y="48.0" text-anchor="start" class="head" >myself more favorably</text><line x1="243.3" x2="243.3" y1="70" y2="318" class="grid"/><text x="243.3" y="338.0" text-anchor="middle" class="tick" >−.2</text><line x1="316.7" x2="316.7" y1="70" y2="318" class="grid"/><text x="316.7" y="338.0" text-anchor="middle" class="tick" >−.1</text><line x1="463.3" x2="463.3" y1="70" y2="318" class="grid"/><text x="463.3" y="338.0" text-anchor="middle" class="tick" >+.1</text><line x1="536.7" x2="536.7" y1="70" y2="318" class="grid"/><text x="536.7" y="338.0" text-anchor="middle" class="tick" >+.2</text><line x1="390.0" x2="390.0" y1="64" y2="322" class="zero"/><text x="390.0" y="338.0" text-anchor="middle" class="tick" >0</text><text x="146.0" y="99.0" text-anchor="end" class="row" >Conscientiousness</text><line x1="265.3" x2="507.3" y1="94" y2="94" class="link"/><circle cx="265.3" cy="94" r="7" class="hers"/><text x="252.3" y="99.0" text-anchor="end" class="val herst" >−.17</text><circle cx="507.3" cy="94" r="7" class="his"/><text x="520.3" y="99.0" text-anchor="start" class="val hist" >.16</text><text x="146.0" y="149.0" text-anchor="end" class="row" >Openness</text><line x1="324.0" x2="492.7" y1="144" y2="144" class="link"/><circle cx="324.0" cy="144" r="7" class="hers"/><text x="311.0" y="149.0" text-anchor="end" class="val herst" >−.09</text><circle cx="492.7" cy="144" r="7" class="his"/><text x="505.7" y="149.0" text-anchor="start" class="val hist" >.14</text><text x="146.0" y="199.0" text-anchor="end" class="row" >Extraversion</text><line x1="302.0" x2="441.3" y1="194" y2="194" class="link"/><circle cx="302.0" cy="194" r="7" class="hers"/><text x="289.0" y="199.0" text-anchor="end" class="val herst" >−.12</text><circle cx="441.3" cy="194" r="7" class="his ns"/><text x="454.3" y="199.0" text-anchor="start" class="val hist" >.07</text><text x="146.0" y="249.0" text-anchor="end" class="row" >Emotional stability</text><line x1="346.0" x2="544.0" y1="244" y2="244" class="link"/><circle cx="346.0" cy="244" r="7" class="hers ns"/><text x="333.0" y="249.0" text-anchor="end" class="val herst" >−.06</text><circle cx="544.0" cy="244" r="7" class="his"/><text x="557.0" y="249.0" text-anchor="start" class="val hist" >.21</text><text x="146.0" y="299.0" text-anchor="end" class="row" >Agreeableness</text><line x1="382.7" x2="419.3" y1="294" y2="294" class="link"/><circle cx="382.7" cy="294" r="7" class="hers ns"/><text x="369.7" y="299.0" text-anchor="end" class="val herst" >−.01</text><circle cx="419.3" cy="294" r="7" class="his ns"/><text x="432.3" y="299.0" text-anchor="start" class="val hist" >.04</text><circle cx="170" cy="370" r="6" class="hers"/><text x="182.0" y="374.0" text-anchor="start" class="leg" >Women</text><circle cx="260" cy="370" r="6" class="his"/><text x="272.0" y="374.0" text-anchor="start" class="leg" >Men</text><circle cx="340" cy="370" r="6" class="nsleg"/><text x="352.0" y="374.0" text-anchor="start" class="leg" >Hollow: not significant</text></svg></div><figcaption>Slope along the line of incongruence (a₃) for each trait, predicting one’s own relationship satisfaction. Neuroticism is reversed and shown as emotional stability so that, for every trait, right means the self-view is the more favorable one.</figcaption></figure></div></div></details></li>
+    </ol>
+    <h3>In Preparation</h3>
+    <ol class="pubs">
+      <li><span class="me">Lim, H.</span>, &amp; Kim, Y. H. (in preparation). Beyond who initiates more: Relative sexual initiation and sexual satisfaction in married couples.<details class="abstract"><summary>Summary &amp; figures</summary><div class="rs-body"><p><strong>Question.</strong> Research on couples’ sexual lives usually asks how often sex happens. Does it also matter how the initiating is divided, and is initiating more always better for the person who does it?</p><p><strong>Data and approach.</strong> 591 married couples from two cohorts. Each spouse independently divided 100% of sexual initiation between themselves and their partner; husbands claimed 64% on average and wives 39%, and the two reports summed to within ten points of 100 for 69% of couples. A curvilinear Actor–Partner Interdependence Model with linear and quadratic terms (robust ML) predicted each spouse’s sexual satisfaction, controlling for both partners’ age and sexual desire, marriage duration, cohort, and the couple’s sexual frequency.</p><p><strong>Findings.</strong> The association was an inverted U. Sexual satisfaction was highest when one’s own share of initiation was around a third and declined as initiation fell almost entirely to one person. The curve did not differ between husbands and wives and appeared only for one’s own share; the partner’s share showed no curvature. The pattern held whether the share was treated as eleven ordered bins (p = .005) or as a continuous score (p = .008), and it reappeared in simple individual-level regressions. The data are cross-sectional, so these are associations.</p><div class="figs"><figure><div class="chart"><svg viewBox="0 0 640 350" role="img" aria-labelledby="c1t c1d"><title id="c1t">Predicted sexual satisfaction by own share of sexual initiation</title><desc id="c1d">An inverted U. Predicted satisfaction rises from 4.78 at a 0% share to a peak of about 4.94 near a one-third share, then falls to 4.35 as the share approaches 100%.</desc><line x1="64" x2="616" y1="282.0" y2="282.0" class="grid"/><text x="54.0" y="286.5" text-anchor="end" class="tick" >4.2</text><line x1="64" x2="616" y1="220.5" y2="220.5" class="grid"/><text x="54.0" y="225.0" text-anchor="end" class="tick" >4.4</text><line x1="64" x2="616" y1="159.0" y2="159.0" class="grid"/><text x="54.0" y="163.5" text-anchor="end" class="tick" >4.6</text><line x1="64" x2="616" y1="97.5" y2="97.5" class="grid"/><text x="54.0" y="102.0" text-anchor="end" class="tick" >4.8</text><line x1="64" x2="616" y1="36.0" y2="36.0" class="grid"/><text x="54.0" y="40.5" text-anchor="end" class="tick" >5.0</text><text x="64.0" y="304.0" text-anchor="middle" class="tick" >0%</text><text x="174.4" y="304.0" text-anchor="middle" class="tick" >20%</text><text x="284.8" y="304.0" text-anchor="middle" class="tick" >40%</text><text x="395.2" y="304.0" text-anchor="middle" class="tick" >60%</text><text x="505.6" y="304.0" text-anchor="middle" class="tick" >80%</text><text x="616.0" y="304.0" text-anchor="middle" class="tick" >100%</text><line x1="340.0" x2="340.0" y1="42" y2="282" class="ref"/><text x="347.0" y="272.0" text-anchor="start" class="note" >Equal split</text><path d="M64.0,103.8 L73.4,98.8 L82.7,94.1 L92.1,89.6 L101.4,85.4 L110.8,81.5 L120.1,77.8 L129.5,74.4 L138.8,71.2 L148.2,68.4 L157.6,65.8 L166.9,63.4 L176.3,61.3 L185.6,59.5 L195.0,57.9 L204.3,56.7 L213.7,55.6 L223.1,54.9 L232.4,54.4 L241.8,54.1 L251.1,54.2 L260.5,54.4 L269.8,55.0 L279.2,55.8 L288.5,56.9 L297.9,58.3 L307.3,59.9 L316.6,61.7 L326.0,63.9 L335.3,66.3 L344.7,69.0 L354.0,71.9 L363.4,75.1 L372.7,78.6 L382.1,82.3 L391.5,86.3 L400.8,90.5 L410.2,95.1 L419.5,99.8 L428.9,104.9 L438.2,110.2 L447.6,115.8 L456.9,121.6 L466.3,127.7 L475.7,134.1 L485.0,140.7 L494.4,147.6 L503.7,154.8 L513.1,162.2 L522.4,169.9 L531.8,177.8 L541.2,186.1 L550.5,194.5 L559.9,203.3 L569.2,212.3 L578.6,221.6 L587.9,231.1 L597.3,240.9 L606.6,251.0 L616.0,261.3" class="curve"/><circle cx="64.0" cy="103.8" r="4.5" class="dot"/><circle cx="94.4" cy="88.6" r="4.5" class="dot"/><circle cx="149.6" cy="68.0" r="4.5" class="dot"/><circle cx="204.8" cy="56.6" r="4.5" class="dot"/><circle cx="260.0" cy="54.4" r="4.5" class="dot"/><circle cx="315.2" cy="61.4" r="4.5" class="dot"/><circle cx="370.4" cy="77.7" r="4.5" class="dot"/><circle cx="425.6" cy="103.1" r="4.5" class="dot"/><circle cx="480.8" cy="137.7" r="4.5" class="dot"/><circle cx="536.0" cy="181.5" r="4.5" class="dot"/><circle cx="591.2" cy="234.5" r="4.5" class="dot"/><line x1="245.4" x2="245.4" y1="63.1" y2="282" class="peak"/><text x="245.4" y="40.1" text-anchor="middle" class="lab" >Highest near a one-third share</text><text x="579.2" y="248.5" text-anchor="end" class="val" >4.35</text><text x="74.0" y="121.8" text-anchor="start" class="val" >4.78</text><text x="340.0" y="336.0" text-anchor="middle" class="axis" >My share of initiating sex (partners’ shares sum to 100%)</text><text x="16.0" y="22.0" text-anchor="start" class="axis" >Predicted sexual satisfaction (1–7 scale)</text></svg></div><figcaption>Model-implied sexual satisfaction at each level of one’s own initiation share, from the gender-constrained model with partner share and covariates held at their means. Differences around the peak are small; the decline at high shares is the clearer result.</figcaption></figure></div></div></details></li>
+      <li><span class="me">Lim, H.</span>, Moon, H., Oh, C., &amp; Kim, Y. H. (in preparation). Is personality more important than money and looks? The cross-sectional and longitudinal impact of pre-marital partner values (personality, appearance, and socioeconomic status) on relationship and sexual satisfaction.<details class="abstract"><summary>Summary &amp; figures</summary><div class="rs-body"><p><strong>Question.</strong> Mate value is commonly described in three domains: personality, physical appearance, and socioeconomic status. Which of them is most closely tied to relationship satisfaction, and does the answer change once couples marry?</p><p><strong>Data and approach.</strong> Engaged couples from two cohorts (1,233 couples pooled) rated their partner in the three domains before marriage and reported their relationship satisfaction before and after the wedding. Actor–Partner Interdependence Models estimated concurrent associations and, controlling for earlier satisfaction, change over time, with cohabitation and cohort as covariates.</p><p><strong>Findings (preliminary).</strong> Before marriage, how people rated their partner’s personality was tied to their own satisfaction about three to four times as strongly as how they rated their partner’s appearance, and perceived socioeconomic status barely registered. Into marriage, personality continued to predict later satisfaction for both spouses, appearance held only for husbands, and socioeconomic status began to matter, most clearly for wives.</p><div class="figs"><figure><div class="chart"><svg viewBox="0 0 640 300" role="img" aria-labelledby="c3t c3d"><title id="c3t">How strongly each perceived partner quality is tied to one’s own premarital relationship satisfaction</title><desc id="c3d">Personality: husbands .40, wives .52. Appearance: husbands .14, wives .11. Socioeconomic status: husbands .02 (not significant), wives .06.</desc><line x1="180.0" x2="180.0" y1="24" y2="238" class="zero"/><text x="180.0" y="258.0" text-anchor="middle" class="tick" >0</text><line x1="320.0" x2="320.0" y1="24" y2="238" class="grid"/><text x="320.0" y="258.0" text-anchor="middle" class="tick" >.2</text><line x1="460.0" x2="460.0" y1="24" y2="238" class="grid"/><text x="460.0" y="258.0" text-anchor="middle" class="tick" >.4</text><line x1="600.0" x2="600.0" y1="24" y2="238" class="grid"/><text x="600.0" y="258.0" text-anchor="middle" class="tick" >.6</text><text x="164.0" y="61.0" text-anchor="end" class="row" >Personality</text><rect x="180.0" y="32" width="360.5" height="18" rx="2" class="hers"/><text x="548.5" y="46.0" text-anchor="start" class="val herst" >.52</text><rect x="180.0" y="56" width="282.1" height="18" rx="2" class="his"/><text x="470.1" y="70.0" text-anchor="start" class="val hist" >.40</text><text x="164.0" y="135.0" text-anchor="end" class="row" >Appearance</text><rect x="180.0" y="106" width="79.8" height="18" rx="2" class="hers"/><text x="267.8" y="120.0" text-anchor="start" class="val herst" >.11</text><rect x="180.0" y="130" width="98.7" height="18" rx="2" class="his"/><text x="286.7" y="144.0" text-anchor="start" class="val hist" >.14</text><text x="164.0" y="200.0" text-anchor="end" class="row" >Socioeconomic</text><text x="164.0" y="218.0" text-anchor="end" class="row" >status</text><rect x="180.0" y="180" width="44.1" height="18" rx="2" class="hers"/><text x="232.1" y="194.0" text-anchor="start" class="val herst" >.06</text><rect x="180.0" y="204" width="16.1" height="18" rx="2" class="his ns"/><text x="204.1" y="218.0" text-anchor="start" class="val hist" >.02 (n.s.)</text><rect x="180" y="277" width="12" height="12" rx="2" class="hers"/><text x="198.0" y="288.0" text-anchor="start" class="leg" >Wives</text><rect x="260" y="277" width="12" height="12" rx="2" class="his"/><text x="278.0" y="288.0" text-anchor="start" class="leg" >Husbands</text></svg></div><figcaption>Actor effects predicting one’s own premarital relationship satisfaction from ratings of the partner in three domains, entered together. Two cohorts pooled.</figcaption></figure></div></div></details></li>
+    </ol>
+    <p class="note">In the figures, <span style="color:var(--hers);font-weight:600">raspberry marks women</span> and <span style="color:var(--his);font-weight:600">teal marks men</span>.</p>
+  </div></section>
+</div>
+
+<div class="view" data-section="presentations">
+  <section id="presentations" class="block"><h2 class="label">Conference Presentations</h2><div class="body">
+    <ol class="pubs">
+      <li><span class="me">Lim, H.</span>, Shin, J. E., &amp; Kim, Y. H. (2026, May). When anxiety buffers but avoidance persists: Attachment configurations and relationship functioning across the marital transition. <span class="pill">Poster</span> Korean Social and Personality Psychological Association, Seoul, Korea.</li>
+      <li>Shin, J. E., <span class="me">Lim, H.</span>, &amp; Kim, Y. H. (2026, May). How I see myself or how you see me: Gender differences in the relative weight of self- and partner-perceptions for relationship well-being. <span class="pill">Poster</span> Korean Social and Personality Psychological Association, Seoul, Korea.</li>
+      <li><span class="me">Lim, H.</span>*, Kim, G.*, Kim, D.*, &amp; Kim, B. (2024, July). Cognitive behavioral therapy versus mindfulness-based intervention in reducing loneliness: A meta-analytic review. <span class="pill">Poster</span> International Congress of Psychology, Prague, Czech Republic.</li>
+    </ol>
+    <p class="note">* equal contribution</p>
+  </div></section>
+</div>
+
+<div class="view" data-section="experience">
+  <section id="experience" class="block"><h2 class="label">Research Experience</h2><div class="body"><ul class="entries"><li><div class="entry-head"><strong>Graduate Research Assistant, Premarital Couple Projects</strong><span class="date">Spring 2025 – Present</span></div><div class="entry-sub">Social &amp; Cultural Psychology Lab, Yonsei University</div><ul class="bullets"><li>Prepared IRB documentation and constructed survey batteries for two dyadic longitudinal studies (2022 cohort: <em>N</em> = 595 dyads; 2024 cohort: <em>N</em> = 630 dyads)</li><li>Processed and analyzed multi-wave dyadic data in SPSS and R</li><li>Trained and supervised research assistants across successive waves of longitudinal data collection</li></ul></li><li><div class="entry-head"><strong>Lab Manager</strong><span class="date">Fall 2025 – Winter 2025</span></div><div class="entry-sub">Social &amp; Cultural Psychology Lab, Yonsei University</div><ul class="bullets"><li>Coordinated weekly lab meetings, including agenda setting, presentation scheduling, and circulation of reading materials</li><li>Administered the lab’s research budget, participant compensation, and software licensing</li><li>Directed the onboarding and work assignments of research assistants and maintained the lab’s data and documentation archive</li></ul></li><li><div class="entry-head"><strong>Undergraduate Research Assistant</strong><span class="date">Spring 2023 – Summer 2024</span></div><div class="entry-sub">Counseling Psychology Lab (PI: Boyoung Kim), The Catholic University of Korea</div><ul class="bullets"><li>Executed a meta-analysis of cognitive behavioral and mindfulness-based interventions for loneliness, from systematic literature search and study screening through effect-size estimation</li></ul></li></ul></div></section>
+  <section id="grants" class="block"><h2 class="label">Grants &amp; Scholarships</h2><div class="body"><ul class="entries compact"><li><div class="entry-head"><strong>Creative Humanities Seminar Grant</strong><span class="date">Spring 2026 – Fall 2026</span></div><div class="entry-sub">Yonsei University Center for Arts &amp; Humanities</div></li><li><div class="entry-head"><strong>Teaching Assistant, The Science of Happiness</strong><span class="date">Fall 2026</span></div><div class="entry-sub">Undergraduate course, Department of Psychology, Yonsei University</div></li><li><div class="entry-head"><strong>Teaching Assistant, Psychology of Interpersonal Relationships</strong><span class="date">Spring 2026</span></div><div class="entry-sub">Undergraduate course, Department of Psychology, Yonsei University</div></li><li><div class="entry-head"><strong>Graduate Assistantship, Lab Manager</strong><span class="date">Fall 2025</span></div><div class="entry-sub">Social &amp; Cultural Psychology Lab, Yonsei University</div></li><li><div class="entry-head"><strong>Teaching Assistant, Cultural Psychology</strong><span class="date">Spring 2025</span></div><div class="entry-sub">Undergraduate course, Department of Psychology, Yonsei University</div></li><li><div class="entry-head"><strong>Academic Merit Scholarship</strong><span class="date">Spring 2022</span></div><div class="entry-sub">The Catholic University of Korea</div></li><li><div class="entry-head"><strong>Academic Merit Scholarship</strong><span class="date">Fall 2020</span></div><div class="entry-sub">The Catholic University of Korea</div></li></ul></div></section>
+</div>
+
+<div class="view" data-section="teaching">
+  <section id="teaching" class="block"><h2 class="label">Teaching</h2><div class="body"><ul class="entries compact"><li><div class="entry-head"><strong>Teaching Assistant, The Science of Happiness</strong><span class="date">Fall 2026</span></div><div class="entry-sub">Undergraduate course, Department of Psychology, Yonsei University</div></li><li><div class="entry-head"><strong>Teaching Assistant, Korean Language Institute Summer School</strong><span class="date">Summer 2026</span></div><div class="entry-sub">Yonsei University Korean Language Institute</div></li><li><div class="entry-head"><strong>Teaching Assistant, Psychology of Interpersonal Relationships</strong><span class="date">Spring 2026</span></div><div class="entry-sub">Undergraduate course, Department of Psychology, Yonsei University</div></li><li><div class="entry-head"><strong>Teaching Assistant, Cultural Psychology</strong><span class="date">Spring 2025</span></div><div class="entry-sub">Undergraduate course, Department of Psychology, Yonsei University</div></li></ul></div></section>
+</div>
+
+<div class="view" data-section="activities">
+  <section id="activities" class="block"><h2 class="label">Scholarly Activities</h2><div class="body"><ul class="entries"><li><div class="entry-head"><strong>AI and Social Sciences Seminar</strong><span class="date">Spring 2026 – Present</span></div><div class="entry-sub">Yonsei University Center for Arts &amp; Humanities</div><ul class="bullets"><li>Convened and moderated a seminar series on the application of artificial intelligence to social scientific inquiry</li></ul></li><li><div class="entry-head"><strong>Quantitative Methods Instructor</strong><span class="date">Winter 2025 – Summer 2026</span></div><div class="entry-sub">Social &amp; Cultural Psychology Lab, Yonsei University</div><ul class="bullets"><li>Designed and taught weekly sessions introducing incoming lab members to statistical analysis and data management in SPSS and R</li></ul></li><li><div class="entry-head"><strong>Special Interest Group (SIG)</strong><span class="date">Spring 2026</span></div><div class="entry-sub">Yonsei University Center for Teaching &amp; Learning</div><ul class="bullets"><li>Engaged in interdisciplinary research exchange with eight graduate students representing cognitive, neuroscience, and social psychology laboratories</li></ul></li><li><div class="entry-head"><strong>Research Methods and Writing Workshop</strong><span class="date">Winter 2025</span></div><div class="entry-sub">Social &amp; Cultural Psychology Lab, Yonsei University</div><ul class="bullets"><li>Quantitative methods: presented and discussed methodological articles on a rotating basis with nine lab members, clarifying statistical concepts and translating them into analytic strategies for dyadic couple data</li><li>Scientific writing: examined scholarship on APA style and research design, working through the structure of empirical articles and practicing the formulation of research gaps, hypotheses, and preregistration plans</li></ul></li><li><div class="entry-head"><strong>Couple Relationships Journal Club</strong><span class="date">Summer 2025</span></div><div class="entry-sub">Social &amp; Cultural Psychology Lab, Yonsei University</div><ul class="bullets"><li>Presented and critically evaluated two empirical articles per week with five graduate students, spanning sexual satisfaction, conflict, attachment, and personality in close relationships</li></ul></li></ul></div></section>
+</div>
+
+<div class="view" data-section="contact">
+  <section id="contact" class="block"><h2 class="label">Contact</h2><div class="body">
+    <dl class="contact">
+      <dt>Email</dt><dd><span class="mailrow inline"><a href="mailto:heesoolim@yonsei.ac.kr">heesoolim@yonsei.ac.kr</a><button type="button" class="copy" data-copy="heesoolim@yonsei.ac.kr" aria-label="Copy email address">Copy</button></span></dd>
+      <dt>Lab</dt><dd><a href="http://www.words.co.kr/xe/" target="_blank" rel="noopener">Social &amp; Cultural Psychology Lab</a>, Department of Psychology, Yonsei University, Seoul</dd>
+      <dt>Advisor</dt><dd><a href="http://www.words.co.kr/xe/" target="_blank" rel="noopener">Young-Hoon Kim</a>, Professor of Psychology, Yonsei University</dd>
+      <dt>CV</dt><dd><a href="Lim_HS_CV.pdf" download="Lim_HS_CV.pdf">Download PDF</a></dd>
+    </dl>
+  </div></section>
+</div>
+
+<footer class="foot"><p>Last updated September 2026</p></footer>
+</main>
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  var views=[].slice.call(document.querySelectorAll('.view')), links=[].slice.call(document.querySelectorAll('.nav a'));
+  function show(hash){
+    var id=(hash||'#about').replace('#',''), target=document.getElementById(id);
+    var view=(target&&target.closest('.view'))||views[0];
+    views.forEach(function(v){v.classList.toggle('active',v===view)});
+    links.forEach(function(a){var on=a.getAttribute('href')==='#'+view.getAttribute('data-section'); a.classList.toggle('active',on); if(on){var n=a.parentNode; if(n.scrollWidth>n.clientWidth) n.scrollLeft=Math.max(0,a.offsetLeft-16);}});
+    window.scrollTo(0,0);
+  }
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a[href^="#"]'); if(!a) return;
+    var h=a.getAttribute('href'); if(h==='#top') h='#about';
+    if(document.getElementById(h.slice(1))){e.preventDefault(); if(location.hash!==h) history.pushState(null,'',h); show(h);}
+  });
+  window.addEventListener('popstate',function(){show(location.hash)});
+  window.addEventListener('hashchange',function(){show(location.hash)});
+  show(location.hash);
+  document.addEventListener('click',function(e){
+    var b=e.target.closest&&e.target.closest('.copy'); if(!b) return;
+    var txt=b.getAttribute('data-copy');
+    function done(){b.textContent='Copied';b.classList.add('done');clearTimeout(b._t);b._t=setTimeout(function(){b.textContent='Copy';b.classList.remove('done')},1800);}
+    function fb(){var t=document.createElement('textarea');t.value=txt;t.style.position='fixed';t.style.top='-1000px';document.body.appendChild(t);t.select();try{document.execCommand('copy');done();}catch(x){}document.body.removeChild(t);}
+    if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(done,fb); else fb();
+  });
+})();
+</script>
+</body>
+</html>
