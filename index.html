@@ -13,16 +13,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#F7F5F9; --surface:#FFFFFF; --text:#1F1826; --muted:#5F5668; --faint:#8A8192; --line:#E2DCE8;
-  --accent:#5B2A5E; --accent-soft:#F0E9F2; --pill:#EAE4EE; --hers:#B23A63; --his:#2B6878;
+  color-scheme:light;
+  --bg:#FBF6F3; --surface:#FFFFFF; --text:#2A1D20; --muted:#6A585B; --faint:#837174; --line:#ECDFDC;
+  --accent:#7D3048; --accent-soft:#F7E8E8; --pill:#F2E4E2; --hers:#B23A63; --his:#2B6878;
   --serif:"Newsreader","Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Apple SD Gothic Neo","Malgun Gothic",serif;
   --sans:"Bricolage Grotesque",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
   --page-w:1060px; --label-w:256px; --gap:52px;
 }
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){--bg:#17131B;--surface:#201A26;--text:#ECE6F1;--muted:#ABA2B4;--faint:#7F768A;--line:#322A3B;--accent:#D2A6DA;--accent-soft:#2A2030;--pill:#2C2434;--hers:#EE8FAE;--his:#79BFD0}
-}
-:root[data-theme="dark"]{--bg:#17131B;--surface:#201A26;--text:#ECE6F1;--muted:#ABA2B4;--faint:#7F768A;--line:#322A3B;--accent:#D2A6DA;--accent-soft:#2A2030;--pill:#2C2434;--hers:#EE8FAE;--his:#79BFD0}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--text);font-family:var(--serif);font-size:17.5px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 a{color:var(--accent);text-decoration:none}
